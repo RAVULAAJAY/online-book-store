@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 42 45% 97%;
+    --foreground: 28 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 28 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 28 25% 15%;
+
+    --primary: 28 80% 42%;
+    --primary-foreground: 42 45% 97%;
+
+    --secondary: 38 40% 88%;
+    --secondary-foreground: 28 25% 15%;
+
+    --muted: 38 40% 94%;
+    --muted-foreground: 28 15% 45%;
+
+    --accent: 168 65% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 38 30% 88%;
+    --input: 38 30% 88%;
+    --ring: 28 80% 42%;
+
+    --radius: 0.5rem;
+
+    --hero-gradient-from: 28 85% 48%;
+    --hero-gradient-to: 38 75% 55%;
+    
+    --warm-accent: 35 90% 65%;
+    --warm-accent-foreground: 28 25% 15%;
+
+    --sidebar-background: 42 40% 96%;
+    --sidebar-foreground: 28 25% 25%;
+    --sidebar-primary: 28 80% 42%;
+    --sidebar-primary-foreground: 42 45% 97%;
+    --sidebar-accent: 38 40% 90%;
+    --sidebar-accent-foreground: 28 25% 15%;
+    --sidebar-border: 38 30% 85%;
+    --sidebar-ring: 28 80% 42%;
+  }
+
+  .dark {
+    --background: 28 30% 8%;
+    --foreground: 42 35% 92%;
+
+    --card: 28 25% 12%;
+    --card-foreground: 42 35% 92%;
+
+    --popover: 28 25% 12%;
+    --popover-foreground: 42 35% 92%;
+
+    --primary: 38 75% 55%;
+    --primary-foreground: 28 25% 12%;
+
+    --secondary: 28 20% 18%;
+    --secondary-foreground: 42 35% 92%;
+
+    --muted: 28 20% 18%;
+    --muted-foreground: 42 20% 65%;
+
+    --accent: 168 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 28 20% 18%;
+    --input: 28 20% 18%;
+    --ring: 38 75% 55%;
+    
+    --hero-gradient-from: 28 70% 35%;
+    --hero-gradient-to: 38 60% 42%;
+    
+    --warm-accent: 35 75% 58%;
+    --warm-accent-foreground: 28 25% 12%;
+
+    --sidebar-background: 28 25% 10%;
+    --sidebar-foreground: 42 35% 85%;
+    --sidebar-primary: 38 75% 55%;
+    --sidebar-primary-foreground: 28 25% 12%;
+    --sidebar-accent: 28 20% 16%;
+    --sidebar-accent-foreground: 42 35% 92%;
+    --sidebar-border: 28 20% 16%;
+    --sidebar-ring: 38 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

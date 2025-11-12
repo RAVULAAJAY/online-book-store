@@ -1,0 +1,171 @@
+import { Book } from '@/types/book';
+import midnightLibrary from '@/assets/books/midnight-library.jpg';
+import atomicHabits from '@/assets/books/atomic-habits.jpg';
+import projectHailMary from '@/assets/books/project-hail-mary.jpg';
+import psychologyMoney from '@/assets/books/psychology-money.jpg';
+import educated from '@/assets/books/educated.jpg';
+import silentPatient from '@/assets/books/silent-patient.jpg';
+import sapiens from '@/assets/books/sapiens.jpg';
+import crawdadsSing from '@/assets/books/crawdads-sing.jpg';
+
+export const books: Book[] = [
+  {
+    id: '1',
+    title: 'The Midnight Library',
+    author: 'Matt Haig',
+    price: 24.99,
+    originalPrice: 29.99,
+    image: midnightLibrary,
+    rating: 4.5,
+    reviewCount: 2847,
+    description: 'Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived.',
+    isbn: '978-0525559474',
+    publisher: 'Viking',
+    publishDate: '2020-09-29',
+    pages: 304,
+    language: 'English',
+    category: 'Fiction',
+    inStock: true,
+    format: 'Hardcover'
+  },
+  {
+    id: '2',
+    title: 'Atomic Habits',
+    author: 'James Clear',
+    price: 27.00,
+    image: atomicHabits,
+    rating: 4.8,
+    reviewCount: 5420,
+    description: 'An Easy & Proven Way to Build Good Habits & Break Bad Ones. Tiny changes, remarkable results.',
+    isbn: '978-0735211292',
+    publisher: 'Avery',
+    publishDate: '2018-10-16',
+    pages: 320,
+    language: 'English',
+    category: 'Self-Help',
+    inStock: true,
+    format: 'Hardcover'
+  },
+  {
+    id: '3',
+    title: 'Project Hail Mary',
+    author: 'Andy Weir',
+    price: 28.00,
+    originalPrice: 32.00,
+    image: projectHailMary,
+    rating: 4.7,
+    reviewCount: 3912,
+    description: 'A lone astronaut must save the earth from disaster in this incredible new science-based thriller from the author of The Martian.',
+    isbn: '978-0593135204',
+    publisher: 'Ballantine Books',
+    publishDate: '2021-05-04',
+    pages: 496,
+    language: 'English',
+    category: 'Science Fiction',
+    inStock: true,
+    format: 'Hardcover'
+  },
+  {
+    id: '4',
+    title: 'The Psychology of Money',
+    author: 'Morgan Housel',
+    price: 22.50,
+    image: psychologyMoney,
+    rating: 4.6,
+    reviewCount: 1823,
+    description: 'Timeless lessons on wealth, greed, and happiness doing well with money is not necessarily about what you know.',
+    isbn: '978-0857197689',
+    publisher: 'Harriman House',
+    publishDate: '2020-09-08',
+    pages: 256,
+    language: 'English',
+    category: 'Business',
+    inStock: true,
+    format: 'Paperback'
+  },
+  {
+    id: '5',
+    title: 'Educated',
+    author: 'Tara Westover',
+    price: 18.99,
+    originalPrice: 24.99,
+    image: educated,
+    rating: 4.7,
+    reviewCount: 4209,
+    description: 'A remarkable memoir about a young woman who leaves her survivalist family and goes on to earn a PhD from Cambridge University.',
+    isbn: '978-0399590504',
+    publisher: 'Random House',
+    publishDate: '2018-02-20',
+    pages: 352,
+    language: 'English',
+    category: 'Biography',
+    inStock: true,
+    format: 'Paperback'
+  },
+  {
+    id: '6',
+    title: 'The Silent Patient',
+    author: 'Alex Michaelides',
+    price: 26.00,
+    image: silentPatient,
+    rating: 4.3,
+    reviewCount: 2156,
+    description: 'A woman\'s act of violence against her husband and the therapist obsessed with uncovering her motive.',
+    isbn: '978-1250301697',
+    publisher: 'Celadon Books',
+    publishDate: '2019-02-05',
+    pages: 336,
+    language: 'English',
+    category: 'Thriller',
+    inStock: true,
+    format: 'Hardcover'
+  },
+  {
+    id: '7',
+    title: 'Sapiens',
+    author: 'Yuval Noah Harari',
+    price: 23.99,
+    image: sapiens,
+    rating: 4.6,
+    reviewCount: 6734,
+    description: 'A Brief History of Humankind exploring how Homo sapiens came to dominate the world.',
+    isbn: '978-0062316097',
+    publisher: 'Harper',
+    publishDate: '2015-02-10',
+    pages: 464,
+    language: 'English',
+    category: 'History',
+    inStock: true,
+    format: 'Paperback'
+  },
+  {
+    id: '8',
+    title: 'Where the Crawdads Sing',
+    author: 'Delia Owens',
+    price: 19.99,
+    originalPrice: 26.00,
+    image: crawdadsSing,
+    rating: 4.4,
+    reviewCount: 8901,
+    description: 'A painfully beautiful first novel that is at once a murder mystery, a coming-of-age narrative and a celebration of nature.',
+    isbn: '978-0735219090',
+    publisher: 'Putnam',
+    publishDate: '2018-08-14',
+    pages: 384,
+    language: 'English',
+    category: 'Fiction',
+    inStock: true,
+    format: 'Paperback'
+  }
+];
+
+export const categories = [
+  'All Books',
+  'Fiction',
+  'Science Fiction',
+  'Thriller',
+  'Biography',
+  'Self-Help',
+  'Business',
+  'History'
+];
