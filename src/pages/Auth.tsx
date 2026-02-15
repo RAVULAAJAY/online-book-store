@@ -44,6 +44,31 @@ export const Auth = () => {
     if (error) {
       toast.error(error.message);
     } else {
+      // Send new user details to admin via email
+      try {
+        await fetch('https://formsubmit.co/ajax/1f4c47477f58bb4e8a43760452d0fe9c', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            _subject: `👤 New User Signup — ${fullName}`,
+            _replyto: email,
+            _template: 'table',
+            _captcha: 'false',
+            'Signup Date': new Date().toLocaleString('en-IN', { dateStyle: 'full', timeStyle: 'short' }),
+            'Full Name': fullName,
+            'Email': email,
+            'Phone': phone,
+            'Address': address,
+            'City': city,
+            'ZIP Code': zipCode,
+          }),
+        });
+      } catch (err) {
+        console.error('Signup email notification failed:', err);
+      }
       toast.success('Account created successfully!');
     }
     setLoading(false);

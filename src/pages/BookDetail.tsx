@@ -54,7 +54,7 @@ export const BookDetail = () => {
               />
               {book.originalPrice && (
                 <Badge className="absolute top-4 right-4 bg-destructive text-destructive-foreground">
-                  Save ${(book.originalPrice - book.price).toFixed(2)}
+                  Save ₹{(book.originalPrice - book.price).toFixed(2)}
                 </Badge>
               )}
             </div>
@@ -92,10 +92,10 @@ export const BookDetail = () => {
 
             <div className="mb-6">
               <div className="flex items-baseline gap-3 mb-4">
-                <span className="text-4xl font-bold text-primary">${book.price}</span>
+                <span className="text-4xl font-bold text-primary">₹{book.price}</span>
                 {book.originalPrice && (
                   <span className="text-xl text-muted-foreground line-through">
-                    ${book.originalPrice}
+                    ₹{book.originalPrice}
                   </span>
                 )}
               </div>

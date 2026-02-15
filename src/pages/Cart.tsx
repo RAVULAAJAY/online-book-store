@@ -75,7 +75,7 @@ export const Cart = () => {
                       
                       <div className="flex items-center gap-4">
                         <span className="text-lg font-bold text-primary">
-                          ${(item.book.price * item.quantity).toFixed(2)}
+                          ₹{(item.book.price * item.quantity).toFixed(2)}
                         </span>
                         <Button
                           variant="ghost"
@@ -101,7 +101,7 @@ export const Cart = () => {
               <div className="space-y-3 mb-4">
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Subtotal</span>
-                  <span className="font-medium text-foreground">${total.toFixed(2)}</span>
+                  <span className="font-medium text-foreground">₹{total.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Shipping</span>
@@ -109,7 +109,7 @@ export const Cart = () => {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Tax</span>
-                  <span className="font-medium text-foreground">${(total * 0.1).toFixed(2)}</span>
+                  <span className="font-medium text-foreground">₹{(total * 0.1).toFixed(2)}</span>
                 </div>
               </div>
 
@@ -118,7 +118,7 @@ export const Cart = () => {
               <div className="flex justify-between mb-6">
                 <span className="text-lg font-semibold text-foreground">Total</span>
                 <span className="text-2xl font-bold text-primary">
-                  ${(total * 1.1).toFixed(2)}
+                  ₹{(total * 1.1).toFixed(2)}
                 </span>
               </div>
 

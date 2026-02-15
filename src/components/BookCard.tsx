@@ -48,10 +48,10 @@ export const BookCard = ({ book }: BookCardProps) => {
           </h3>
           <p className="text-sm text-muted-foreground mb-3">{book.author}</p>
           <div className="flex items-baseline gap-2">
-            <span className="text-lg font-bold text-primary">${book.price}</span>
+            <span className="text-lg font-bold text-primary">₹{book.price}</span>
             {book.originalPrice && (
               <span className="text-sm text-muted-foreground line-through">
-                ${book.originalPrice}
+                ₹{book.originalPrice}
               </span>
             )}
           </div>
